@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Function</title>
+</head>
+<body>
+    <h1>Fungsi</h1>
+
+    <h3>Soal No.5</h3>
+    <div id="jawaban5"></div>
+
+    <h3>Soal No.6</h3>
+    <div id="jawaban6"></div>
+
+    <script>
+
+        // Soal No. 5 Fungsi Welcome
+        function welcome() {
+            return "Selamat datang di universitas teknokrat indonesia";
+        }
+
+        // Tampilkan hasil fungsi di halaman HTML
+        var jawaban5Element = document.getElementById("jawaban5");
+        jawaban5Element.innerHTML = welcome();
+
+       
+        // Soal No. 6 Fungsi Looping
+        function looping(start, end) {
+            let result = '';
+            for (let i = start; i <= end; i++) {
+                if (i === end) {
+                    result += i;
+                } else {
+                    result += i + ',';
+                }
+            }
+            return result;
+        }
+
+        // Tampilkan hasil fungsi di halaman HTML
+        var jawaban6Element = document.getElementById("jawaban6");
+        jawaban6Element.innerHTML = looping(3, 7);
+
+    </script>
+</body>
+</html>
